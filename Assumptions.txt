@@ -7,4 +7,12 @@ Standard Computers
 		X GB primary memory
 		X processor
 		Gigabit network
-	
+
+Assumption 1
+"The system shall be able to emulate various software applications, platforms and protocols,
+depending on what the tested software will interact with." Also here, is must be possible to extend with new emulations."
+Emulate a software
+Att emulera en mjukvara är att köra mjukvaran och låta det kommunicera med testsystemet via MIB.
+
+
+
