@@ -1,0 +1,10 @@
+Standard Computers
+	OS
+		Windows
+		Unix
+		Mac
+	Minumum Hardware
+		X GB primary memory
+		X processor
+		Gigabit network
+	
