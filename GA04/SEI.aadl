@@ -1,0 +1,39 @@
+property set SEI is
+  -- property to support security level analysis
+  SecurityLevel: inherit aadlinteger  applies to (thread, thread group, process, system);
+  -- property to support analysis of missrate propagation along flows
+  StreamMissRate: aadlreal  applies to (port);
+  -- manual priority assignment for threeads
+  Priority: aadlinteger  applies to (thread);
+  -- properties to support specification of partitions and latency analysis
+  -- The partition execution rate, specified through Partition_Latency, 
+  -- contributes to flow latency on cross-partition communication
+  Partition_Latency: Time => 50 Ms applies to (system, process);
+  Is_Partition: aadlboolean  => false applies to (system, process);
+  -- properties to support adjustment of execution time according to processor speed
+  -- execution time is specified in terms of a reference processor
+  -- Its speed is specified by the property constant reference_cycle_time
+  -- The speed of processors is specified by cycle_time
+  -- Adjustments to the execution time are made according to the cycle time ratio
+  reference_cycle_time: constant Time=> 5000 ps;
+  cycle_time: Time => 5000 ps applies to (processor);
+  -- If reference_proc is specified that the specified processor is used as reference processor 
+  -- instead of the above constant
+  reference_processor:  classifier(processor) applies to (thread, thread group, process, system, device);
+  SafetyCriticality: aadlinteger  applies to (thread, thread group, process, system);
+  MIPSCapacity: aadlreal  units SEI::Processor_Speed_Units applies to (processor, system);
+  MIPSBudget: aadlreal  units SEI::Processor_Speed_Units applies to (thread, thread group, process, system, device);
+  RAMCapacity: aadlreal  units Size_Units applies to (memory, system);
+  RAMBudget: aadlreal  units Size_Units applies to (thread, thread group, process, system, device);
+  ROMCapacity: aadlreal  units Size_Units applies to (memory, system);
+  ROMBudget: aadlreal  units Size_Units applies to (thread, thread group, process, system, device);
+  PowerCapacity: aadlreal  units SEI::Power_Units applies to (bus, system);
+  PowerBudget: access aadlreal  units SEI::Power_Units applies to (bus);  -- bus is sufficient as it gets recorded in the bus access feater
+  BandWidthCapacity: aadlreal  units SEI::Data_Volume_Units applies to (bus, system);
+  BandWidthBudget: aadlreal  units SEI::Data_Volume_Units applies to (connections);
+  RAMActual: aadlreal  units Size_Units applies to (thread, thread group, process, system);
+  ROMActual: aadlreal  units Size_Units applies to (thread, thread group, process, system);
+  Processor_Speed_Units: type units (KIPS, MIPS => KIPS * 1000, GIPS => MIPS * 1000);
+  Power_Units: type units (mW, W => mW * 1000, KW => W * 1000);
+  Data_Volume_Units: type units (bitsps, Bps => bitsps * 8, Kbps => Bps * 1000, Mbps => Kbps * 1000, Gbps => Mbps * 1000);
+end SEI;
