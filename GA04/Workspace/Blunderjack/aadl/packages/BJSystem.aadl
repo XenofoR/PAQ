@@ -28,7 +28,6 @@ public
       actuator_inout_flow: flow path device_in -> actuator_out;
   end DeviceManager;
   
-  --TODO: add subsystem level flows
   system implementation DeviceManager.Impl
     subcomponents
       ActuInterf: process BJSubsystems::ActuatorInterface;
@@ -60,18 +59,10 @@ public
         SEI::BandWidthBudget => 7.0 Mbps;
         };
     flows
-      sensor_inout_flow: flow path sensor_in -> device_out {
-      	Latency => 1 Ms;
-      };
-      signal_inout_flow: flow path device_in -> controlsig_out {
-      	Latency => 5 Ms;
-      };
-      cmd_inout_flow: flow path controlcmd_in -> device_out {
-      	Latency => 5 Ms;
-      };
-      actuator_inout_flow: flow path device_in -> actuator_out {
-      	Latency => 5 Ms;
-      };
+      sensor_inout_flow: flow path sensor_in -> C01 -> SenInterf.flow1 -> C02 -> device_out;
+      signal_inout_flow: flow path device_in -> C08 -> CtrlPanelInterf.flow_signal -> C07 -> controlsig_out;
+      cmd_inout_flow: flow path controlcmd_in -> C05 -> CtrlPanelInterf.flow_cmd -> C06 -> device_out;
+      actuator_inout_flow: flow path device_in -> C03 -> ActuInterf.flow_cmd -> C04 -> actuator_out;
   end DeviceManager.Impl;
   
   system SafetyManager
@@ -85,7 +76,6 @@ public
       cmd_sig_flow: flow path device_in -> device_out;
   end SafetyManager;
   
-  --TODO: add subsystem level flows
   system implementation SafetyManager.Impl
     subcomponents
       EventMgr: process BJSubsystems::EventManager;
@@ -100,5 +90,14 @@ public
       C05: data port SafetyDirector.act_out -> CActuators.cmd_in;
       C06: port group SafetyDirector.sig_out -> device_out;
       C07: port group CActuators.cmd_out -> device_out;
+    flows
+      weight_inout_flow: flow path device_in -> C01 -> EventMgr.flow_weight 
+      -> C02 -> SafetyDirector.flow_weight -> C06 -> device_out;
+      
+      cmd_act_flow: flow path device_in -> C01 -> EventMgr.flow_cmd 
+      -> C04 -> SafetyDirector.flow_cmd_act -> C05 -> CActuators.flow_act -> C07 -> device_out;
+      
+      cmd_sig_flow: flow path device_in -> C01 -> EventMgr.flow_cmd 
+      -> C04 -> SafetyDirector.flow_cmd_sig -> C06 -> device_out;
   end SafetyManager.Impl;
 end BJSystem;

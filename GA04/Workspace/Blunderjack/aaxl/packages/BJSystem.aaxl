@@ -34,7 +34,6 @@
         </features>
       </systemType>
       <systemImpl name="DeviceManager.Impl" compType="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]">
-        <comment>TODO: add subsystem level flows</comment>
         <connections>
           <portGroupConnection name="C01" srcContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]" dstContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/subcomponents/processSubcomponent[@name=SenInterf]" src="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/features/portGroup[@name=sensor_in]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=SensorInterface]/features/portGroup[@name=SensorToInterface]">
             <properties>
@@ -95,32 +94,24 @@
         </connections>
         <flows>
           <flowPathImpl name="sensor_inout_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/flowSpecs/flowPathSpec[@name=sensor_inout_flow]">
-            <properties>
-              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
-                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="1" value="1" base="10"/>
-              </propertyAssociation>
-            </properties>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C01]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=SensorInterface]/flowSpecs/flowPathSpec[@name=flow1]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/subcomponents/processSubcomponent[@name=SenInterf]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C02]"/>
           </flowPathImpl>
           <flowPathImpl name="signal_inout_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/flowSpecs/flowPathSpec[@name=signal_inout_flow]">
-            <properties>
-              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
-                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="5" value="5" base="10"/>
-              </propertyAssociation>
-            </properties>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C08]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ControlPanelInterface]/flowSpecs/flowPathSpec[@name=flow_signal]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/subcomponents/processSubcomponent[@name=CtrlPanelInterf]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C07]"/>
           </flowPathImpl>
           <flowPathImpl name="cmd_inout_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/flowSpecs/flowPathSpec[@name=cmd_inout_flow]">
-            <properties>
-              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
-                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="5" value="5" base="10"/>
-              </propertyAssociation>
-            </properties>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C05]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ControlPanelInterface]/flowSpecs/flowPathSpec[@name=flow_cmd]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/subcomponents/processSubcomponent[@name=CtrlPanelInterf]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C06]"/>
           </flowPathImpl>
           <flowPathImpl name="actuator_inout_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/flowSpecs/flowPathSpec[@name=actuator_inout_flow]">
-            <properties>
-              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
-                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="5" value="5" base="10"/>
-              </propertyAssociation>
-            </properties>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C03]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ActuatorInterface]/flowSpecs/flowPathSpec[@name=flow_cmd]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/subcomponents/processSubcomponent[@name=ActuInterf]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=DeviceManager.Impl]/connections/portGroupConnection[@name=C04]"/>
           </flowPathImpl>
         </flows>
         <subcomponents>
@@ -141,7 +132,6 @@
         </features>
       </systemType>
       <systemImpl name="SafetyManager.Impl" compType="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]">
-        <comment>TODO: add subsystem level flows</comment>
         <connections>
           <portGroupConnection name="C01" srcContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]" dstContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=EventMgr]" src="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/features/portGroup[@name=device_in]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/portGroup[@name=device_data]"/>
           <eventDataConnection name="C02" srcContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=EventMgr]" dstContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=SafetyDirector]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/eventDataPort[@name=weight_in]" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/eventDataPort[@name=weight]"/>
@@ -151,6 +141,31 @@
           <portGroupConnection name="C06" srcContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=SafetyDirector]" dstContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/portGroup[@name=sig_out]" dst="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/features/portGroup[@name=device_out]"/>
           <portGroupConnection name="C07" srcContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=CActuators]" dstContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ControlActuators]/features/portGroup[@name=cmd_out]" dst="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/features/portGroup[@name=device_out]"/>
         </connections>
+        <flows>
+          <flowPathImpl name="weight_inout_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/flowSpecs/flowPathSpec[@name=weight_inout_flow]">
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C01]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/flowSpecs/flowPathSpec[@name=flow_weight]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=EventMgr]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/eventDataConnection[@name=C02]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/flowSpecs/flowPathSpec[@name=flow_weight]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=SafetyDirector]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C06]"/>
+          </flowPathImpl>
+          <flowPathImpl name="cmd_act_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/flowSpecs/flowPathSpec[@name=cmd_act_flow]">
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C01]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/flowSpecs/flowPathSpec[@name=flow_cmd]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=EventMgr]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/eventDataConnection[@name=C04]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/flowSpecs/flowPathSpec[@name=flow_cmd_act]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=SafetyDirector]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/dataConnection[@name=C05]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ControlActuators]/flowSpecs/flowPathSpec[@name=flow_act]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=CActuators]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C07]"/>
+          </flowPathImpl>
+          <flowPathImpl name="cmd_sig_flow" implement="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=SafetyManager]/flowSpecs/flowPathSpec[@name=cmd_sig_flow]">
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C01]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/flowSpecs/flowPathSpec[@name=flow_cmd]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=EventMgr]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/eventDataConnection[@name=C04]"/>
+            <flowElement flowSpec="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/flowSpecs/flowPathSpec[@name=flow_cmd_sig]" flowContext="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/subcomponents/processSubcomponent[@name=SafetyDirector]"/>
+            <flowElement connection="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemImpl[@name=SafetyManager.Impl]/connections/portGroupConnection[@name=C06]"/>
+          </flowPathImpl>
+        </flows>
         <subcomponents>
           <processSubcomponent name="EventMgr" classifier="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]"/>
           <processSubcomponent name="CActuators" classifier="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=ControlActuators]"/>
