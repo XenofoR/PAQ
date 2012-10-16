@@ -1,0 +1,62 @@
+package SystemConfigurations
+public
+	system mysystem
+	end mysystem;
+  
+  system implementation mysystem.BJCCSys
+    subcomponents
+      Platform: system HardwarePlatform::ComputingPlatform.Config3;
+      DeviceManagement: system BJSystem::DeviceManager.Impl;
+      SafetyControlManagement: system BJSystem::SafetyManager.Impl;
+      PilotDisplay: device HardwareParts::ControlPanel;
+      weight_sensor: device HardwareParts::Sensors;
+      control_panel: device HardwareParts::ControlPanel;
+      feeder: device HardwareParts::Actuators;
+    connections
+      BusAccessConnection1: bus access Platform.BusAccess1 -> DeviceManagement.BusAccess1;
+      BusAccessConnection2: bus access Platform.BusAccess1 -> SafetyControlManagement.BusAccess1;
+      C01: port group weight_sensor.data_out -> DeviceManagement.sensor_in;
+      C02: port group DeviceManagement.device_out -> SafetyControlManagement.device_in;
+      C03: port group SafetyControlManagement.device_out -> DeviceManagement.device_in;
+      C04: port group DeviceManagement.controlsig_out -> control_panel.signal;
+      C05: port group control_panel.control -> DeviceManagement.controlcmd_in;
+      C06: port group DeviceManagement.actuator_out -> feeder.cmd;
+    flows
+    	F01: end to end flow weight_sensor.flow1 -> C01 
+    	-> DeviceManagement.sensor_inout_flow -> C02 
+    	-> SafetyControlManagement.weight_inout_flow -> C03 
+    	-> DeviceManagement.signal_inout_flow -> C04 
+    	-> control_panel.signal_flow;
+    	
+    	--F02: end to end flow control_panel.cmd_flow -> C05 -> DeviceManagment.cmd_inout_flow 
+    	---> C02 -> SafetyControlManagment.
+    	
+    --TODO: Flow Latency analysis: add system level flows here to evaluate the scenarios 1 and 2
+    properties 
+      -- TODO: Resource allocation analysis: complete/change/add the mapping of 
+      -- processes to hardware elements depending on the processing and memory 
+      -- budgets.
+      
+      --Processor 1
+		Actual_Processor_Binding =>  reference platform.processor1 applies to DeviceManagement.ActuInterf; 			--Actuator
+		Actual_Processor_Binding =>  reference platform.processor1 applies to SafetyControlManagement.CActuators;	--Actuator
+            --Membanks
+            	Actual_Memory_Binding =>  reference platform.processor1.membank1 applies to DeviceManagement.ActuInterf;
+      			Actual_Memory_Binding =>  reference platform.processor1.membank1 applies to SafetyControlManagement.CActuators;
+            	
+      --Processor 2
+		Actual_Processor_Binding => reference platform.processor2 applies to SafetyControlManagement.SafetyDirector;
+		Actual_Processor_Binding => reference platform.processor2 applies to DeviceManagement.SenInterf;		
+     	--Membanks
+			Actual_Memory_Binding =>  reference platform.processor2.membank1 applies to SafetyControlManagement.SafetyDirector;
+			Actual_Memory_Binding =>  reference platform.processor2.membank1 applies to DeviceManagement.SenInterf;
+   
+      --Processor 3
+      	Actual_Processors_Binding => reference platform.processor3 applies to SafetyControlManagement.EventMgr;
+      	Actual_Processors_Binding => reference platform.processor3 applies to SafetyControlManagement.DevSurveilence;
+      	--Membank
+			Actual_Memory_Binding =>  reference platform.processor3.membank1 applies to SafetyControlManagement.EventMgr;
+			Actual_Memory_Binding =>  reference platform.processor3.membank1 applies to SafetyControlManagement.DevSurveilence;
+      	
+  end mysystem.BJCCSys;
+end SystemConfigurations;

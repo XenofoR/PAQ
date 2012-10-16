@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:instance="http:///AADL/instance" name="SystemConfiguration_mysystem_BJCCSys_Instance" category="system" systemImpl="/aadlSpec[@name=SystemConfiguration]/aadlPackage[@name=SystemConfigurations]/aadlPublic/systemImpl[@name=mysystem.BJCCSys]"/>
