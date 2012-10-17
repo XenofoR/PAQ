@@ -28,8 +28,9 @@ public
     	-> DeviceManagement.signal_inout_flow -> C04 
     	-> control_panel.signal_flow;
     	
-    	--F02: end to end flow control_panel.cmd_flow -> C05 -> DeviceManagment.cmd_inout_flow 
-    	---> C02 -> SafetyControlManagment.
+    	--F02: 
+    	end to end flow control_panel.cmd_flow -> C05 
+    	-> DeviceManagment.cmd_inout_flow -> 
     	
     --TODO: Flow Latency analysis: add system level flows here to evaluate the scenarios 1 and 2
     properties 
