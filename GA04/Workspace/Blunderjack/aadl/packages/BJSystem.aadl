@@ -72,6 +72,7 @@ public
       device_out: port group Types::DeviceOut;
     flows
       weight_inout_flow: flow path device_in -> device_out;
+      rotation_inout_flow: flow path device_in -> device_out;
       cmd_act_flow: flow path device_in -> device_out;
       cmd_sig_flow: flow path device_in -> device_out;
   end SafetyManager;
