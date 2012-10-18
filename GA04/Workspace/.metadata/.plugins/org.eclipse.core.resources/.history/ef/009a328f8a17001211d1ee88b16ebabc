@@ -1,0 +1,24 @@
+owner,flow,model element,name,deadline or conn delay,sampling delay,partition delay,flow spec,additional, total (ms), expected (ms)
+
+Inst. End2End (Synchronous),F01,Subcomponent,weight_sensor,0.0 us,0.0 us,0.0 us,10.0 ms,10.0 ms,10.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.weight_sensor.data_out.id_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.SenInterf.SensorToInterface.id,0.0 us,0.0 us,0.0 us,0.0 us,10.0 ms,10.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Subcomponent,SenInterf:flow1,0.0 us,50.0 ms,50.0 ms,15.0 ms,15.0 ms,75.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.SenInterf.InterfaceOut.dev_type_SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.EventMgr.device_data.dev_type,0.0 us,0.0 us,0.0 us,0.0 us,15.0 ms,75.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Subcomponent,EventMgr:flow_weight,0.0 us,50.0 ms,50.0 ms,5.0 ms,5.0 ms,115.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.EventMgr.weight_SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.SafetyDirector.weight_in,0.0 us,0.0 us,0.0 us,0.0 us,5.0 ms,115.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Subcomponent,SafetyDirector:flow_weight,0.0 us,50.0 ms,50.0 ms,20.0 ms,20.0 ms,180.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.SafetyDirector.sig_out.dev_type_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.CtrlPanelInterf.InterfaceSigIn.dev_type,0.0 us,0.0 us,0.0 us,0.0 us,20.0 ms,180.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Subcomponent,CtrlPanelInterf:flow_signal,0.0 us,50.0 ms,50.0 ms,5.0 ms,5.0 ms,215.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.control_panel.control.id_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.CtrlPanelInterf.ControlPanelCmdToInterface.id,0.0 us,0.0 us,0.0 us,0.0 us,5.0 ms,215.0 ms,0.0 us
+Inst. End2End (Synchronous),F01,Subcomponent,control_panel:signal_flow,0.0 us,0.0 us,0.0 us,10.0 ms,15.0 ms,225.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,weight_sensor,0.0 us,0.0 us,0.0 us,10.0 ms,10.0 ms,10.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.weight_sensor.data_out.id_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.SenInterf.SensorToInterface.id,0.0 us,0.0 us,0.0 us,0.0 us,10.0 ms,10.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,SenInterf:flow1,0.0 us,50.0 ms,50.0 ms,15.0 ms,15.0 ms,75.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.SenInterf.InterfaceOut.dev_type_SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.EventMgr.device_data.dev_type,0.0 us,0.0 us,0.0 us,0.0 us,15.0 ms,75.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,EventMgr:flow_weight,0.0 us,50.0 ms,50.0 ms,5.0 ms,5.0 ms,130.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.EventMgr.weight_SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.SafetyDirector.weight_in,0.0 us,0.0 us,0.0 us,0.0 us,5.0 ms,130.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,SafetyDirector:flow_weight,0.0 us,50.0 ms,50.0 ms,20.0 ms,20.0 ms,200.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.SafetyControlManagement.SafetyDirector.sig_out.dev_type_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.CtrlPanelInterf.InterfaceSigIn.dev_type,0.0 us,0.0 us,0.0 us,0.0 us,20.0 ms,200.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,CtrlPanelInterf:flow_signal,0.0 us,50.0 ms,50.0 ms,5.0 ms,5.0 ms,255.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Connection,SystemConfiguration_mysystem_BJCCSys_Instance.control_panel.control.id_SystemConfiguration_mysystem_BJCCSys_Instance.DeviceManagement.CtrlPanelInterf.ControlPanelCmdToInterface.id,0.0 us,0.0 us,0.0 us,0.0 us,5.0 ms,255.0 ms,0.0 us
+Inst. End2End (ASynchronous),F01,Subcomponent,control_panel:signal_flow,0.0 us,0.0 us,0.0 us,10.0 ms,15.0 ms,265.0 ms,0.0 us
