@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="7" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="125" y="42">
+<window height="768" maximized="true" width="1024" x="25" y="25">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -23,81 +23,28 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.internal.ide.dialogs.WelcomeEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1350288540677" focus="true" label="Workspace - AADL">
+<page aggregateWorkingSetId="Aggregate for window 1350552011028" focus="true" label="Workspace - AADL">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<<<<<<< HEAD
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-=======
-<part id="3"/>
-<part id="2"/>
-<part id="4"/>
-<part id="5"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
 </presentation>
 </folder>
 </info>
 </editorArea>
-<<<<<<< HEAD
 <editor activePart="true" focus="true" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SystemConfiguration.aadl" partName="SystemConfiguration.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/SystemConfiguration.aadl" title="SystemConfiguration.aadl" tooltip="Blunderjack/aadl/packages/SystemConfiguration.aadl" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1389" selectionTopPixel="90"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSystem.aadl" partName="BJSystem.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/BJSystem.aadl" title="BJSystem.aadl" tooltip="Blunderjack/aadl/packages/BJSystem.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4195" selectionTopPixel="956"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSubsystems.aadl" partName="BJSubsystems.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/BJSubsystems.aadl" title="BJSubsystems.aadl" tooltip="Blunderjack/aadl/packages/BJSubsystems.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="713" selectionTopPixel="720"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="SystemConfiguration.aaxl" partName="SystemConfiguration.aaxl" path="J:/PAQ/GA04/Workspace/Blunderjack/aaxl/packages/SystemConfiguration.aaxl" title="SystemConfiguration.aaxl" tooltip="Blunderjack/aaxl/packages/SystemConfiguration.aaxl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aaxl/packages/SystemConfiguration.aaxl"/>
-=======
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSystem.aadl" partName="BJSystem.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/BJSystem.aadl" title="BJSystem.aadl" tooltip="Blunderjack/aadl/packages/BJSystem.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="1098" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SystemConfiguration.aadl" partName="SystemConfiguration.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/SystemConfiguration.aadl" title="SystemConfiguration.aadl" tooltip="Blunderjack/aadl/packages/SystemConfiguration.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1579" selectionTopPixel="0"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="Types.aadl" partName="Types.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/Types.aadl" title="Types.aadl" tooltip="Blunderjack/aadl/packages/Types.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/Types.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="160" selectionTopPixel="180"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSubsystems.aadl" partName="BJSubsystems.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/BJSubsystems.aadl" title="BJSubsystems.aadl" tooltip="Blunderjack/aadl/packages/BJSubsystems.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="989" selectionTopPixel="209"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwareParts.aadl" partName="HardwareParts.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/HardwareParts.aadl" title="HardwareParts.aadl" tooltip="Blunderjack/aadl/packages/HardwareParts.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1669" selectionTopPixel="524"/>
-</editor>
-<editor id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwarePlatform.aadl" partName="HardwarePlatform.aadl" path="J:/PAQ/GA04/Workspace/Blunderjack/aadl/packages/HardwarePlatform.aadl" title="HardwarePlatform.aadl" tooltip="Blunderjack/aadl/packages/HardwarePlatform.aadl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blunderjack/aadl/packages/HardwarePlatform.aadl"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1689" selectionTopPixel="180"/>
 </editor>
 </editors>
 <views>
-<view id="edu.cmu.sei.osate.propertyview.AadlPropertyView" partName="AADL Property Values">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
+<view id="edu.cmu.sei.osate.propertyview.AadlPropertyView" partName="AADL Property Values"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="edu.cmu.sei.osate.ui.navigator.AadlNavigator" partName="AADL Navigator">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
 <filters>
@@ -108,32 +55,18 @@
 <element path="/Blunderjack"/>
 <element path="/Blunderjack/aadl"/>
 <element path="/Blunderjack/aadl/packages"/>
-<element path="/Blunderjack/aaxl"/>
-<element path="/Blunderjack/aaxl/packages"/>
-<element path="/Blunderjack/reports"/>
-<element path="/Blunderjack/reports/FlowLatency"/>
 </expanded>
 <selection>
-<<<<<<< HEAD
-<element path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-=======
-<element path="/Blunderjack/reports/FlowLatency/SystemConfiguration_mysystem_BJCCSys_Instance.csv"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
+<element path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
 </selection>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<<<<<<< HEAD
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Errors (14 items)"/>
-=======
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (12 items)"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="688"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -183,21 +116,19 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="edu.cmu.sei.osate.ui.navigator.AadlNavigator"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
-<view id="edu.cmu.sei.osate.propertyview.AadlPropertyView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="edu.cmu.sei.osate.propertyview.AadlPropertyView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="edu.cmu.sei.osate.ui.navigator.AadlNavigator" appearance="2" expanded="2">
 <page content="edu.cmu.sei.osate.ui.navigator.AadlNavigator" label="AADL Navigator"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -212,12 +143,20 @@
 <info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="edu.cmu.sei.osate.propertyview.AadlPropertyView" label="AADL Property Values"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="edu.cmu.sei.osate.propertyview.AadlPropertyView" label="AADL Property Values"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@489578c1" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -228,325 +167,13 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<<<<<<< HEAD
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" path="/Blunderjack/aaxl/packages/HardwarePlatform.aaxl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/HardwarePlatform.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" path="/Blunderjack/aaxl/packages/Types.aaxl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/Types.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" path="/Blunderjack/aaxl/packages/SystemConfiguration.aaxl"/>
 </editors>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="1246" y="0"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="668" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="2675" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1389" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="3466" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="4091" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="4292" y="12"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="4292" y="12"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="2851" y="19"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="4">
-<position info="not_deleted" x="1826" y="5"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1764" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="2536" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1993" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="2388" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="2827" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="453" y="15"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="2">
-<position info="not_deleted" x="2388" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="453" y="15"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="445" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="5765" y="23"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="5410" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="4040" y="110"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="491" y="0"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="4">
-<position info="not_deleted" x="1875" y="0"/>
-</item>
-<item historyLabel="HardwarePlatform.aaxl" index="5">
-<position/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="4">
-<position info="not_deleted" x="1875" y="0"/>
-</item>
-<item historyLabel="HardwarePlatform.aadl" index="6">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="4">
-<position info="not_deleted" x="437" y="0"/>
-</item>
-<item historyLabel="Types.aaxl" index="7">
-<position/>
-</item>
-<item historyLabel="Types.aadl" index="8">
-<position info="not_deleted" x="400" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="2362" y="0"/>
-</item>
-<item historyLabel="Types.aadl" index="8">
-<position info="not_deleted" x="400" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="9">
-<position info="not_deleted" x="2543" y="17"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="9">
-<position info="not_deleted" x="4195" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="713" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="9">
-<position info="not_deleted" x="4195" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1986" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="1">
-<position info="not_deleted" x="713" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="9">
-<position info="not_deleted" x="4195" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="3">
-<position info="not_deleted" x="1299" y="79"/>
-</item>
-<item historyLabel="SystemConfiguration.aaxl" index="10">
-<position/>
-</item>
-<item active="true" historyLabel="SystemConfiguration.aaxl" index="10">
-<position info="platform:/resource/Blunderjack/aaxl/packages/SystemConfiguration.aaxl#/"/>
-=======
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" path="/Blunderjack/aadl/packages/Types.aadl"/>
-</editors>
-<item historyLabel="HardwareParts.aadl" index="3">
-<position info="not_deleted" x="1833" y="9"/>
-</item>
 <item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1230" y="11"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="3">
-<position info="not_deleted" x="1843" y="3"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="3829" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="846" y="13"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1923" y="12"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1242" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1891" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1625" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2033" y="15"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1625" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1141" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1625" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1141" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1625" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1141" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1141" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1141" y="10"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1625" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2033" y="15"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="3">
-<position info="not_deleted" x="1843" y="3"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2033" y="15"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="2">
-<position info="not_deleted" x="841" y="21"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2033" y="15"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="2">
-<position info="not_deleted" x="841" y="21"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2033" y="15"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="2">
-<position info="not_deleted" x="841" y="21"/>
-</item>
-<item historyLabel="Types.aadl" index="4">
-<position info="not_deleted" x="160" y="0"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="2">
-<position info="not_deleted" x="930" y="15"/>
-</item>
-<item historyLabel="Types.aadl" index="4">
-<position info="not_deleted" x="160" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1171" y="2"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2843" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="568" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2108" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="475" y="13"/>
-</item>
-<item historyLabel="HardwareParts.aadl" index="3">
-<position info="not_deleted" x="1669" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1160" y="13"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2049" y="26"/>
-</item>
-<item historyLabel="BJSubsystems.aadl" index="2">
-<position info="not_deleted" x="989" y="9"/>
-</item>
-<item historyLabel="Types.aadl" index="4">
-<position info="not_deleted" x="160" y="0"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1621" y="0"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="2049" y="26"/>
-</item>
-<item historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1551" y="23"/>
-</item>
-<item historyLabel="BJSystem.aadl" index="1">
-<position info="not_deleted" x="1098" y="14"/>
+<position info="not_deleted" x="5853" y="0"/>
 </item>
 <item active="true" historyLabel="SystemConfiguration.aadl" index="0">
-<position info="not_deleted" x="1551" y="23"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -565,81 +192,8 @@
 </trimLayout>
 </window>
 <mruList>
-<<<<<<< HEAD
-=======
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="SystemConfiguration_mysystem_BJCCSys_Instance.csv" tooltip="Blunderjack/reports/FlowLatency/SystemConfiguration_mysystem_BJCCSys_Instance.csv">
-<persistable path="/Blunderjack/reports/FlowLatency/SystemConfiguration_mysystem_BJCCSys_Instance.csv"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwarePlatform.aadl" tooltip="Blunderjack/aadl/packages/HardwarePlatform.aadl">
-<persistable path="/Blunderjack/aadl/packages/HardwarePlatform.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwareParts.aadl" tooltip="Blunderjack/aadl/packages/HardwareParts.aadl">
-<persistable path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSubsystems.aadl" tooltip="Blunderjack/aadl/packages/BJSubsystems.aadl">
-<persistable path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="Types.aadl" tooltip="Blunderjack/aadl/packages/Types.aadl">
-<persistable path="/Blunderjack/aadl/packages/Types.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="BJSystem.aaxl" tooltip="Blunderjack/aaxl/packages/BJSystem.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/BJSystem.aaxl"/>
-</file>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="SystemConfiguration.aaxl" tooltip="Blunderjack/aaxl/packages/SystemConfiguration.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/SystemConfiguration.aaxl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSubsystems.aadl" tooltip="Blunderjack/aadl/packages/BJSubsystems.aadl">
-<persistable path="/Blunderjack/aadl/packages/BJSubsystems.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="BJSystem.aadl" tooltip="Blunderjack/aadl/packages/BJSystem.aadl">
-<persistable path="/Blunderjack/aadl/packages/BJSystem.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="Types.aaxl" tooltip="Blunderjack/aaxl/packages/Types.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/Types.aaxl"/>
-</file>
-<<<<<<< HEAD
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwarePlatform.aadl" tooltip="Blunderjack/aadl/packages/HardwarePlatform.aadl">
-<persistable path="/Blunderjack/aadl/packages/HardwarePlatform.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="HardwarePlatform.aaxl" tooltip="Blunderjack/aaxl/packages/HardwarePlatform.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/HardwarePlatform.aaxl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="SystemConfiguration_mysystem_BJCCSys_Instance.csv" tooltip="Blunderjack/reports/FlowLatency/SystemConfiguration_mysystem_BJCCSys_Instance.csv">
-<persistable path="/Blunderjack/reports/FlowLatency/SystemConfiguration_mysystem_BJCCSys_Instance.csv"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="HardwareParts.aadl" tooltip="Blunderjack/aadl/packages/HardwareParts.aadl">
-<persistable path="/Blunderjack/aadl/packages/HardwareParts.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="HardwareParts.aaxl" tooltip="Blunderjack/aaxl/packages/HardwareParts.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/HardwareParts.aaxl"/>
-=======
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SEI.aadl" tooltip="J:\PAQ\GA04\SEI.aadl">
-<persistable uri="file:/J:/PAQ/GA04/SEI.aadl"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SystemConfiguration.aadl" tooltip="Blunderjack/aadl/packages/SystemConfiguration.aadl">
 <persistable path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="Types.aadl" tooltip="Blunderjack/aadl/packages/Types.aadl">
-<persistable path="/Blunderjack/aadl/packages/Types.aadl"/>
-</file>
-<<<<<<< HEAD
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="BJSystem.aaxl" tooltip="Blunderjack/aaxl/packages/BJSystem.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/BJSystem.aaxl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="BJSubsystems.aaxl" tooltip="Blunderjack/aaxl/packages/BJSubsystems.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/BJSubsystems.aaxl"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SEI.aadl" tooltip="J:\PAQ\GA04\SEI.aadl">
-<persistable uri="file:/J:/PAQ/GA04/SEI.aadl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.texteditor.AadlTextEditorID" name="SystemConfiguration.aadl" tooltip="Blunderjack/aadl/packages/SystemConfiguration.aadl">
-<persistable path="/Blunderjack/aadl/packages/SystemConfiguration.aadl"/>
-=======
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="edu.cmu.sei.aadl.model.core.presentation.CoreEditorID" name="HardwareParts.aaxl" tooltip="Blunderjack/aaxl/packages/HardwareParts.aaxl">
-<persistable path="/Blunderjack/aaxl/packages/HardwareParts.aaxl"/>
->>>>>>> b3ef78637b157c6690868842f54b749a34ab4523
 </file>
 </mruList>
 </workbench>
