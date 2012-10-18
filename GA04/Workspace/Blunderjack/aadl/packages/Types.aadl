@@ -6,6 +6,7 @@ public
       reading: out data port Sensor_Data;
   end SensorOut;
   
+  
   port group SensorIn
     inverse of SensorOut
   end SensorIn;
@@ -19,6 +20,7 @@ public
   port group DeviceIn
     inverse of DeviceOut
   end DeviceIn;
+  
   
   port group ActuatorOut
     features

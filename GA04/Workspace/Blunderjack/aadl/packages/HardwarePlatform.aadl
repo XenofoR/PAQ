@@ -37,3 +37,4 @@ public
       BusAccessConnection1: bus access AHBBus -> BusAccess1;
   end ComputingPlatform.Config3;
 end HardwarePlatform;
+

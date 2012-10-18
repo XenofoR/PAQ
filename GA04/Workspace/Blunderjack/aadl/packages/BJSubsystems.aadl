@@ -18,7 +18,6 @@ public
       SEI::Partition_Latency => 50 Ms;
       SEI::Is_Partition => true;
   end ActuatorInterface;
-  
   -- The component to interface with the control panel both to take the input 
   -- from the operator and to display information
   process ControlPanelInterface

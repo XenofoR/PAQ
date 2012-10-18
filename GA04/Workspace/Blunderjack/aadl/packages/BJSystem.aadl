@@ -11,7 +11,8 @@ public
     properties
       SEI::reference_processor => processor HardwareParts::ARM.solo;
   end BJCCSystem;
-  
+   
+   
   system DeviceManager
     extends BJCCSystem
     features
