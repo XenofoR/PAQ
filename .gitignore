@@ -1,3 +1,4 @@
 *.xlsx#
 *.dia~
 *.db
+/GA04/Workspace/.metadata/*

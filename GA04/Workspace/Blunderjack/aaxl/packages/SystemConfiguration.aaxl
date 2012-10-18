@@ -97,11 +97,13 @@
         <flows>
           <comment>C07: port group rotation_sensor.data_out -> DeviceManagement.sensor_in;</comment>
           <endToEndFlow name="F02">
+            <comment>SCENARIO 1</comment>
             <comment>F01: end to end flow weight_sensor.flow1 -> C01 </comment>
             <comment>> DeviceManagement.sensor_inout_flow -> C02 </comment>
             <comment>> SafetyControlManagement.weight_inout_flow -> C03 </comment>
             <comment>> DeviceManagement.signal_inout_flow -> C04 </comment>
             <comment>> control_panel.signal_flow;</comment>
+            <comment>SCENARIO 2</comment>
             <flowElement flowSpec="/aadlSpec[@name=HardwareParts]/aadlPackage[@name=HardwareParts]/aadlPublic/deviceType[@name=ControlPanel]/flowSpecs/flowSourceSpec[@name=cmd_flow]" flowContext="/aadlSpec[@name=SystemConfiguration]/aadlPackage[@name=SystemConfigurations]/aadlPublic/systemImpl[@name=mysystem.BJCCSys]/subcomponents/deviceSubcomponent[@name=control_panel]"/>
             <flowElement connection="/aadlSpec[@name=SystemConfiguration]/aadlPackage[@name=SystemConfigurations]/aadlPublic/systemImpl[@name=mysystem.BJCCSys]/connections/portGroupConnection[@name=C05]"/>
             <flowElement flowSpec="/aadlSpec[@name=BJSystem]/aadlPackage[@name=BJSystem]/aadlPublic/systemType[@name=DeviceManager]/flowSpecs/flowPathSpec[@name=cmd_inout_flow]" flowContext="/aadlSpec[@name=SystemConfiguration]/aadlPackage[@name=SystemConfigurations]/aadlPublic/systemImpl[@name=mysystem.BJCCSys]/subcomponents/systemSubcomponent[@name=DeviceManagement]"/>
