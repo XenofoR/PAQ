@@ -70,6 +70,9 @@ public
       flow_weight: flow path weight_in -> sig_out {
         Latency => 20 Ms;
         };
+      flow_rotation: flow path rotation_in -> sig_out {
+      	Latency => 20Ms;
+      };
       flow_cmd_act: flow path cmd_in -> act_out {
         Latency => 50 Ms;
         };
@@ -96,6 +99,9 @@ public
       flow_weight: flow path device_data -> weight {
         Latency => 5 Ms;
         };
+      flow_rotation: flow path device_data -> rotation {
+      	Latency => 5 Ms;
+      };
       flow_cmd: flow path device_data -> cmd {
         Latency => 10 Ms;
         };

@@ -131,6 +131,13 @@
               </propertyAssociation>
             </properties>
           </flowPathSpec>
+          <flowPathSpec name="flow_rotation" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/eventDataPort[@name=rotation_in]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/portGroup[@name=sig_out]">
+            <properties>
+              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
+                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="20" value="20" base="10"/>
+              </propertyAssociation>
+            </properties>
+          </flowPathSpec>
           <flowPathSpec name="flow_cmd_act" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/eventDataPort[@name=cmd_in]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=BJSafetyDirector]/features/dataPort[@name=act_out]">
             <properties>
               <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
@@ -174,6 +181,13 @@
         </properties>
         <flowSpecs>
           <flowPathSpec name="flow_weight" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/portGroup[@name=device_data]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/eventDataPort[@name=weight]">
+            <properties>
+              <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
+                <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="5" value="5" base="10"/>
+              </propertyAssociation>
+            </properties>
+          </flowPathSpec>
+          <flowPathSpec name="flow_rotation" src="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/portGroup[@name=device_data]" dst="/aadlSpec[@name=BJSubsystems]/aadlPackage[@name=BJSubsystems]/aadlPublic/processType[@name=EventManager]/features/eventDataPort[@name=rotation]">
             <properties>
               <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Latency]">
                 <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]" valueString="5" value="5" base="10"/>
